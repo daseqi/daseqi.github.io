@@ -657,13 +657,52 @@ img.hover-shadow {
                           <div class="popup-gallery2">
                           <h4><a href="img/main.png" style="font-size: medium;" class="project-background" title="Main CPU Circuit"><img src="img/main.png" width="0" height="0"><b><u>Single-Cycle CPU Gallery</u> <i class="fa fa-image"></i></b></a></h4>
                         
-                          <a href="img/control.png" title="Control Subcircuit"><img src="img/control.png" width="0" height="0"></a>
-                          <a href="img/alu.png" title="ALU Subcircuit"><img src="img/alu.png" width="0" height="0"></a>
-                          <a href="img/program-counter.png" title="Program Counter Subcircuit"><img src="img/program-counter.png" width="0" height="0"></a>
-                          <a href="img/register-file.png" title="Register File Subcircuit"><img src="img/register-file.png" width="0" height="0"></a>
+                          <a href="img/control.png" title="Control Sub-Circuit"><img src="img/control.png" width="0" height="0"></a>
+                          <a href="img/alu.png" title="ALU Sub-Circuit"><img src="img/alu.png" width="0" height="0"></a>
+                          <a href="img/program-counter.png" title="Program Counter Sub-Circuit"><img src="img/program-counter.png" width="0" height="0"></a>
+                          <a href="img/register-file.png" title="Register File Sub-Circuit"><img src="img/register-file.png" width="0" height="0"></a>
                           <a href="img/prime-number-demo.gif" title="Demo (Calculates Prime Numbers In Hex)"><img src="img/prime-number-demo.gif" width="0" height="0"></a>
                           </div>
                       
+
+                          <!--next -->
+
+                          <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 400;">
+                          <a class="project-background" target="_blank" href="https://github.com/daseqi/healthy-ride"><u>Healthy Ride PGH</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
+                          <p class="mt-4" style="font-size: medium;font-weight:300">
+                          The goal of this project was to create an end-to-end data science pipeline that analyzed data collected by Healthy Ride PGH -- a public bike sharing system for Pittsburgh, PA. Taking rental data from Healthy Ride PGH, I summarized and graphed the rental data, performed clustering on the data using two clustering algorithms (KMeans and DBSCAN), and compared the results of the two clustering algorithms. 
+                          </p>
+                          <div style="font-size: medium;">
+                            <h4 style="font-size: medium;"><b>Languages:</b></h4>
+                                <ul style="font-size: medium;font-weight:100"><li>Python</li>
+                                </ul>
+                            <h4 style="font-size: medium;"><b>Libraries:</b></h4>
+                              <ul style="font-size: medium;font-weight:100"><li>Pandas</li>
+                              <li>Matplotlib</li>
+                              <li>Scikit-Learn</li>
+                              </ul>
+                          </div>
+                          <div class="popup-gallery3">
+                          <h4><a href="img/dataframe.png" style="font-size: medium;" class="project-background" title="Dataframe Head"><img src="img/dataframe.png" width="0" height="0"><b><u>Healthy Ride PGH Gallery</u> <i class="fa fa-image"></i></b></a></h4>
+                        
+                          <a href="img/daily-fromCNT.png" title="Daily fromCNT of Given Month"><img src="img/daily-fromCNT.png" width="0" height="0"></a>
+                          <a href="img/daily-rebalCNT.png" title="Daily rebalCNT of Given Month"><img src="img/daily-rebalCNT.png" width="0" height="0"></a>
+                          <a href="img/hourly-fromCNT.png" title="Hourly fromCNT of Given Month"><img src="img/hourly-fromCNT.png" width="0" height="0"></a>
+                          <a href="img/most-rented.png" title="Highest Rented Bikes of Given Month"><img src="img/most-rented.png" width="0" height="0"></a>
+                          <a href="img/stations-with-from.png" title="Stations with Highest fromCNT of Given Month "><img src="img/stations-with-from.png" width="0" height="0"></a>
+                          <a href="img/stations-with-rebal.png" title="Stations with Highest rebalCNT of Given Month"><img src="img/stations-with-rebal.png" width="0" height="0"></a>
+                          <a href="img/k3.png" title="KMeans k = 3"><img src="img/k3.png" width="0" height="0"></a>
+                          <a href="img/k6.png" title="KMeans k = 6"><img src="img/k6.png" width="0" height="0"></a>
+                          <a href="img/eps50-min2.png" title="DBSCAN eps = 50, min_samples = 2"><img src="img/eps50-min2.png" width="0" height="0"></a>
+                          <a href="img/eps150-min5.png" title="DBSCAN eps = 150, min_samples = 5"><img src="img/eps50-min2.png" width="0" height="0"></a>
+                          <a href="img/knee.png" title="DBSCAN Knee Method"><img src="img/knee.png" width="0" height="0"></a>
+                          <a href="img/elbow.png" title="KMeans Elbow Method"><img src="img/elbow.png" width="0" height="0"></a>
+                          </div>
+
+
+
+
+
                         </div>
                      </div>
                   </div>
@@ -707,6 +746,28 @@ img.hover-shadow {
 
       $(document).ready(function() {
         $('.popup-gallery2').magnificPopup({
+          delegate: 'a',
+          type: 'image', 
+          fixedContentPos: true,
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+              return item.el.attr('title') + '<small>by Devin Haughey</small>';
+            }
+          }
+        });
+      });
+
+       $(document).ready(function() {
+        $('.popup-gallery3').magnificPopup({
           delegate: 'a',
           type: 'image', 
           fixedContentPos: true,
