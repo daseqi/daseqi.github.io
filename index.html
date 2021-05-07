@@ -690,6 +690,14 @@ img.hover-shadow {
           fixedContentPos: false, 
           tLoading: 'Loading image #%curr%...',
           mainClass: 'mfp-img-mobile',
+          callbacks: {
+    open: function() {
+      jQuery('body').addClass('noscroll');
+    },
+    close: function() {
+      jQuery('body').removeClass('noscroll');
+    }
+  },
           gallery: {
             enabled: true,
             navigateByImgClick: true,
@@ -711,6 +719,14 @@ img.hover-shadow {
           fixedContentPos: false,
           tLoading: 'Loading image #%curr%...',
           mainClass: 'mfp-img-mobile',
+          callbacks: {
+    open: function() {
+      jQuery('body').addClass('noscroll');
+    },
+    close: function() {
+      jQuery('body').removeClass('noscroll');
+    }
+  },
           gallery: {
             enabled: true,
             navigateByImgClick: true,
