@@ -632,7 +632,7 @@ img.hover-shadow {
                               <ul style="font-size: medium;text-decoration: underline #000 dashed!important;"><li><a class="project-background" target="_blank" href="https://wiki.polkadot.network/docs/en/contributors#bill-laboon"><u>Bill Laboon</u></a></li>
                               </ul>
                           </div>
-                          <div class="popup-gallery">
+                          <div class="popup-gallery1">
                           <h4><a href="img/parachain-popup.png" style="font-size: medium;text-decoration: underline #000 dashed!important;" class="project-background" title="Parachain Pop-up"><img src="img/parachain-popup.png" width="0" height="0"><b><u>Photo Gallery</u></b></a></h4>
                         
                           <a href="img/event-updates.png" title="Event Updates Panel"><img src="img/event-updates.png" width="0" height="0"></a>
@@ -654,7 +654,7 @@ img.hover-shadow {
                                 <li>RISC Architecture (MIPS)</li>
                                 </ul>
                           </div>
-                          <div class="popup-gallery">
+                          <div class="popup-gallery2">
                           <h4><a href="img/main.png" style="font-size: medium;text-decoration: underline #000 dashed!important;" class="project-background" title="Main CPU Circuit"><img src="img/main.png" width="0" height="0"><b><u>Photo Gallery</u></b></a></h4>
                         
                           <a href="img/control.png" title="Control Subcircuit"><img src="img/control.png" width="0" height="0"></a>
@@ -684,7 +684,27 @@ img.hover-shadow {
 <script src="magnific-popup/jquery.magnific-popup.js"></script>
       <script>
       $(document).ready(function() {
-        $('.popup-gallery').magnificPopup({
+        $('.popup-gallery1').magnificPopup({
+          delegate: 'a',
+          type: 'image', 
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+              return item.el.attr('title') + '<small>by Devin Haughey</small>';
+            }
+          }
+        });
+      });
+
+      $(document).ready(function() {
+        $('.popup-gallery2').magnificPopup({
           delegate: 'a',
           type: 'image', 
           tLoading: 'Loading image #%curr%...',
