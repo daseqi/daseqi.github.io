@@ -618,7 +618,7 @@ img.hover-shadow {
                           <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 400;">
                           <a class="project-background" target="_blank" href="https://github.com/daseqi/polkadot-visualization"><u>Polkadot</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
                           <p class="mt-4" style="font-size: medium;font-weight:300">
-                          The goal of this project was to provide the Web3 Foundation with an illustration of what was happening on the Rococo network, a test network for <a style="text-decoration: underline #000 dashed!important;font-weight:900" class="project-background" href="https://polkadot.network/about/" target="_blank"><u>Polkadot</u></a>. In a team of four, I was tasked with implementing and updating the Rococo API calls, in addition to fetching network constants that would later be displayed on the webpage. 
+                          The goal of this project was to provide the Web3 Foundation with an illustration of the activity happening on the Rococo network, a test network for <a style="text-decoration: underline #000 dashed!important;font-weight:900" class="project-background" href="https://polkadot.network/about/" target="_blank"><u>Polkadot</u></a>. In a team of four, I was tasked with implementing and updating the Rococo API calls, in addition to fetching network constants that would later be displayed on the webpage application. 
                           </p>
                           <div style="font-size: medium;">
                             <h4 style="font-size: medium;"><b>Languages:</b></h4>
@@ -633,7 +633,7 @@ img.hover-shadow {
                               </ul>
                           </div>
                           <div class="popup-gallery1">
-                          <h4><a href="img/parachain-popup.png" style="font-size: medium;text-decoration: underline #000 dashed!important;" class="project-background" title="Parachain Pop-up"><img src="img/parachain-popup.png" width="0" height="0"><b><u>Polkadot Gallery</u></b></a></h4>
+                          <h4><a href="img/parachain-popup.png" style="font-size: medium;" class="project-background" title="Parachain Pop-up"><img src="img/parachain-popup.png" width="0" height="0"><b><u>Polkadot Gallery</u> <i class="fa fa-image"></i></b></a></h4>
                         
                           <a href="img/event-updates.png" title="Event Updates Panel"><img src="img/event-updates.png" width="0" height="0"></a>
                           <a href="img/info-panel.png" title="Info Panel"><img src="img/info-panel.png" width="0" height="0"></a>
@@ -644,7 +644,7 @@ img.hover-shadow {
                           <!--next -->
 
                           <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 400;">
-                          <a class="project-background" target="_blank" href="https://github.com/daseqi/Single-Cycle-CPU"><u>Single-Cycle CPU</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
+                          <a class="project-background" target="_blank" href="https://github.com/daseqi/single-cycle-cpu"><u>Single-Cycle CPU</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
                           <p class="mt-4" style="font-size: medium;font-weight:300">
                           The goal of this project was to build a 16-bit, Harvard architecture, single-cycle CPU in software (Logisim). The final CPU is capable of running programs (with funtion calls, conditionals, etc), outputting numbers, and printing output to a display. Test programs are loaded into ROM by right clicking ROM and selecting "load image". To actually run the CPU, select the "Simulate" tab and enable the simulation.    
                           </p>
@@ -655,7 +655,7 @@ img.hover-shadow {
                                 </ul>
                           </div>
                           <div class="popup-gallery2">
-                          <h4><a href="img/main.png" style="font-size: medium;text-decoration: underline #000 dashed!important;" class="project-background" title="Main CPU Circuit"><img src="img/main.png" width="0" height="0"><b><u>Single-Cycle CPU Gallery</u></b></a></h4>
+                          <h4><a href="img/main.png" style="font-size: medium;" class="project-background" title="Main CPU Circuit"><img src="img/main.png" width="0" height="0"><b><u>Single-Cycle CPU Gallery</u> <i class="fa fa-image"></i></b></a></h4>
                         
                           <a href="img/control.png" title="Control Subcircuit"><img src="img/control.png" width="0" height="0"></a>
                           <a href="img/alu.png" title="ALU Subcircuit"><img src="img/alu.png" width="0" height="0"></a>
@@ -687,17 +687,10 @@ img.hover-shadow {
         $('.popup-gallery1').magnificPopup({
           delegate: 'a',
           type: 'image',
-          
+          fixedContentPos: true,
           tLoading: 'Loading image #%curr%...',
           mainClass: 'mfp-img-mobile',
-          callbacks: {
-    open: function() {
-      jQuery('body').addClass('noscroll');
-    },
-    close: function() {
-      jQuery('body').removeClass('noscroll');
-    }
-  },
+          
           gallery: {
             enabled: true,
             navigateByImgClick: true,
@@ -719,14 +712,7 @@ img.hover-shadow {
           
           tLoading: 'Loading image #%curr%...',
           mainClass: 'mfp-img-mobile',
-          callbacks: {
-    open: function() {
-      jQuery('body').addClass('noscroll');
-    },
-    close: function() {
-      jQuery('body').removeClass('noscroll');
-    }
-  },
+          
           gallery: {
             enabled: true,
             navigateByImgClick: true,
