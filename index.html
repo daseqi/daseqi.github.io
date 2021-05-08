@@ -700,8 +700,46 @@ img.hover-shadow {
                           </div>
 
 
+                           <!--next -->
+
+                          <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 400;">
+                          <a class="project-background" target="_blank" href="https://github.com/daseqi/apartment-lookup"><u>Apartment Lookup</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
+                          <p class="mt-4" style="font-size: medium;font-weight:300">
+                          The goal of this project was to implement heap and trie data structures that could quickly and efficiently search for apartments with certain characteristics, such as lowest price or highest square footage. The algorithm performs apartment searches in O(1) time complexity, while minimizing space complexity wherever possible. The program's interface is through the command line. For more information about the time and space complexity, please refer to the GitHub documentation.
+                          </p>
+                          <div style="font-size: medium;">
+                            <h4 style="font-size: medium;"><b>Languages:</b></h4>
+                                <ul style="font-size: medium;font-weight:100"><li>Java</li>
+                                </ul>
+                          </div>
+                          <div class="popup-gallery4">
+                          <h4><a href="img/main-program.png" style="font-size: medium;" class="project-background" title="Command Line Interface"><img src="img/main-program.png" width="0" height="0"><b><u>Apartment Lookup Gallery</u> <i class="fa fa-image"></i></b></a></h4>
+                        
+                          <a href="img/add-apartment.png" title="Add Apartment"><img src="img/add-apartment.png" width="0" height="0"></a>
+                          <a href="img/lowest-price.png" title="Lowest Priced Apartment"><img src="img/lowest-price.png" width="0" height="0"></a>
+                          <a href="img/lowest-price-by-city.png" title="Lowest Priced Apartment By City"><img src="img/lowest-price-by-city.png" width="0" height="0"></a>
+                          </div>
 
 
+
+                          <!--next -->
+
+                          <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 400;">
+                          <a class="project-background" target="_blank" href="https://github.com/daseqi/misc"><u>Miscellaneous</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
+                          <p class="mt-4" style="font-size: medium;font-weight:300">
+                          Other (smaller or incomplete) projects include...
+                          </p>
+                          <div style="font-size: medium;">
+                            <h4 style="font-size: medium;"><b>Reddit Bot:</b></h4>
+                                <ul style="font-size: medium;font-weight:100"><li>This distance bot can scan new posts within the r/running subreddit and can: automatically reply to submissions or comments that contain “mi” or “km” keywords and convert the distance; reply to a user, when summoned, with the converted distances of the specific distances mentioned above the user’s call request.</li>
+                                </ul>
+                            <h4 style="font-size: medium;"><b>Art Bot:</b></h4>
+                                <ul style="font-size: medium;font-weight:100"><li>This art bot monitors an popular artist's (<a style="text-decoration: underline #000 dashed!important;font-weight:900" class="project-background" href="https://www.jingzhiyong.com/" target="_blank"><u>ZhiYong Jing</u></a>) website and sends a text message when he posts a new painting or print to his website.</li>
+                                </ul>
+                            <h4 style="font-size: medium;"><b>Options Chart:</b></h4>
+                              <ul style="font-size: medium;font-weight:100"><li>This is a simple application that, when given a stock’s ticker symbol and strike price, will scrape Yahoo options data on the stock and convert the data to graphically show the price of the contract -- at the given strike price -- over time (over the expiration dates). </li>
+                              </ul>
+                          </div>                          
 
                         </div>
                      </div>
@@ -768,6 +806,28 @@ img.hover-shadow {
 
        $(document).ready(function() {
         $('.popup-gallery3').magnificPopup({
+          delegate: 'a',
+          type: 'image', 
+          fixedContentPos: true,
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+              return item.el.attr('title') + '<small>by Devin Haughey</small>';
+            }
+          }
+        });
+      });
+
+      $(document).ready(function() {
+        $('.popup-gallery4').magnificPopup({
           delegate: 'a',
           type: 'image', 
           fixedContentPos: true,
