@@ -51,7 +51,7 @@ input.cmn-toggle-round-flat + label {
   padding: .75px;
   width: 45px;
   height: 22.5px;
-  background-color: black;
+  background-color: black !important;
   border-radius: 22.5px;
   transition: background 0.4s;
 }
@@ -187,6 +187,10 @@ input.cmn-toggle-round-flat:checked + label:after {
   max-width: 1200px;
 }
 
+.center {
+  text-align: center;
+  margin: auto;
+}
 /* The Close Button */
 .close {
   color: white;
@@ -760,7 +764,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                            
                            <p class="mt-4" style="font-family: Bitter, Courier, monospace;font-size:medium;">
                               I’m currently a senior at the University of Pittsburgh 
-                              studying Computer Science. I will be graduating this summer with the intention of finding a job as a software engineer. My areas of interest include financial software, data science, and cryptocurrency. Check out a few of my projects below!<!-- -->
+                              studying Computer Science. I will be graduating this summer with the intention of finding a job as a software engineer. My areas of interest include data science, web development, and blockchain technology. Check out a few of my projects below!<!-- -->
 
                               
                            </p>
@@ -772,38 +776,119 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                      <div class="container">
                         <h2 class="section-title">Projects</h2><hr id="break">
                         <div style="font-family: Bitter, Courier, monospace;" class="content-of-body">
+
+
+
+  
+                          <!--START -->
                           
-                          <h3 class="section-header mt-4 " style="font-size: 120%;font-weight: 900;">
-                          <a class="project-background" id="link2" target="_blank" href="https://github.com/daseqi/polkadot-visualization"><u><b>Polkadot</b></u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
-                          <p class="mt-4" style="font-size: medium;font-weight:300">
-                          The goal of this project was to provide the Web3 Foundation with an illustration of the activity happening on the Rococo network, a test network for <a style="text-decoration: underline #000 dashed!important;font-weight:900" id="polka" class="project-background" href="https://polkadot.network/about/" target="_blank"><u>Polkadot</u></a>. In a team of four, I was tasked with implementing and updating the Rococo API calls, in addition to fetching network constants that would later be displayed on the webpage application. 
+
+                          <div class="row">
+                            <div class="col-4 center">
+                            <h3 class="section-header mt-4 " style="font-size: 120%;font-weight: 900;">
+                                <a class="project-background" id="link2" target="_blank" href="https://github.com/BenRushin/CS1530Chisel"><u><b>Chisel</b></u> <i class="fa fa-github" aria-hidden="true"></i></a></h3>
+                              
+
+                                    <div class="popup-gallery5">
+                                    <h4><a href="img/chisel/login.png" id="link8" style="font-size: medium;" class="project-background" title="Chisel Login"><img src="img/chisel/login.png" width="0" height="0"><b><u>Gallery</u> <i class="fa fa-image"></i></b></a></h4>
+                                  
+                                    <a href="img/chisel/register.png" title="Chisel Registration"><img src="img/chisel/register.png" width="0" height="0"></a>
+                                    <a href="img/chisel/session-bar.png" title="Session Bar"><img src="img/chisel/session-bar.png" width="0" height="0"></a>
+                                    <a href="img/chisel/new-session.png" title="Create A Workout"><img src="img/chisel/new-session.png" width="0" height="0"></a>
+                                    <a href="img/chisel/session-feedback.png" title="Workout Feedback"><img src="img/chisel/session-feedback.png" width="0" height="0"></a>
+                                    <a href="img/chisel/view-profile.png" title="View Profile"><img src="img/chisel/view-profile.png" width="0" height="0"></a>
+                                    <a href="img/chisel/update-profile.png" title="Update Profile"><img src="img/chisel/update-profile.png" width="0" height="0"></a>
+                                    <a href="img/chisel/new-post.png" title="Create New Post"><img src="img/chisel/new-post.png" width="0" height="0"></a>
+                                    <a href="img/chisel/search-users.png" title="Search Users"><img src="img/chisel/search-users.png" width="0" height="0"></a>
+                                    
+                                    </div>
+
+                            </div>
+                            <div class="col-8">
+                              
+                              <p class="mt-4" style="font-size: medium;font-weight:300">
+                          The goal of this project was to create a simple fitness tracker application. This application takes minimal user input and processes that input to curate personal workouts, called sessions. Once the user is finished with an excercise during a session, the user can give feedback to the application, and Chisel will adjust the sets and reps according to that user feedback. Additionally, this application features a social component, which allows users to update their profiles, view and follow other users, and create posts that their followers can view.
                           </p>
                           <div style="font-size: medium;">
                             <h4 style="font-size: medium;"><b>Languages:</b></h4>
-                                <ul style="font-size: medium;font-weight:100"><li>JavaScript/CSS/HTML</li>
+                                <ul style="font-size: medium;font-weight:100"><li>Python</li>
                                 </ul>
                             <h4 style="font-size: medium;"><b>Frameworks:</b></h4>
-                                <ul style="font-size: medium;font-weight:100"><li>Node.js</li>
-                                <li>Anime.js</li>
+                                <ul style="font-size: medium;font-weight:100"><li>Flask</li>
+                                <li>Bootstrap</li>
                                 </ul>
-                            <h4 style="font-size: medium;"><b>Advisor:</b></h4>
-                              <ul style="font-size: medium;text-decoration: underline #000 dashed!important;"><li><a class="project-background" id="link3" target="_blank" href="https://wiki.polkadot.network/docs/en/contributors#bill-laboon"><u>Bill Laboon</u></a></li>
+                            <h4 style="font-size: medium;"><b>Tools:</b></h4>
+                              <ul style="font-size: medium;font-weight:100"><li>SQLAlchemy</li>
+                                <li>Jinja</li>
                               </ul>
                           </div>
-                          <div class="popup-gallery1">
-                          <h4><a href="img/parachain-popup.png" id="link4" style="font-size: medium;" class="project-background" title="Parachain Pop-up"><img src="img/parachain-popup.png" width="0" height="0"><b><u>Polkadot Gallery</u> <i class="fa fa-image"></i></b></a></h4>
-                        
-                          <a href="img/event-updates.png" title="Event Updates Panel"><img src="img/event-updates.png" width="0" height="0"></a>
-                          <a href="img/info-panel.png" title="Info Panel"><img src="img/info-panel.png" width="0" height="0"></a>
-                          <a href="img/relay-chain.png" title="Relay Chain & Parachains"><img src="img/relay-chain.png" width="0" height="0"></a>
-                          <a href="img/relay-animation.gif" title="Chain Animation"><img src="img/relay-animation.gif" width="0" height="0"></a>
+
+
+
+                            </div>
                           </div>
 
-                          <!--next -->
 
-                          <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 900;">
+                          <hr id="break1">
+                          <!--next -->
+                          
+
+                           <div class="row">
+                            <div class="col-4 center">
+                               <h3 class="section-header mt-4 " style="font-size: 120%;font-weight: 900;">
+                                <a class="project-background" id="link13" target="_blank" href="https://github.com/daseqi/polkadot-visualization"><u><b>Polkadot</b></u> <i class="fa fa-github" aria-hidden="true"></i></a></h3>
+                        
+                                 <div class="popup-gallery1">
+                                <h4><a href="img/parachain-popup.png" id="link4" style="font-size: medium;" class="project-background" title="Parachain Pop-up"><img src="img/parachain-popup.png" width="0" height="0"><b><u>Gallery</u> <i class="fa fa-image"></i></b></a></h4>
+                              
+                                <a href="img/event-updates.png" title="Event Updates Panel"><img src="img/event-updates.png" width="0" height="0"></a>
+                                <a href="img/info-panel.png" title="Info Panel"><img src="img/info-panel.png" width="0" height="0"></a>
+                                <a href="img/relay-chain.png" title="Relay Chain & Parachains"><img src="img/relay-chain.png" width="0" height="0"></a>
+                                <a href="img/relay-animation.gif" title="Chain Animation"><img src="img/relay-animation.gif" width="0" height="0"></a>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                              <p class="mt-4" style="font-size: medium;font-weight:300">
+                          The goal of this project was to provide the Web3 Foundation with an illustration of the activity happening on the Rococo network, a test network for <a style="text-decoration: underline #000 dashed!important;font-weight:900" id="polka" class="project-background" href="https://polkadot.network/about/" target="_blank"><u>Polkadot</u></a>. In a team of four, I was tasked with implementing and updating the Rococo API calls, in addition to fetching network constants that would later be displayed on the webpage application. 
+                          </p>
+                              <div style="font-size: medium;">
+                                <h4 style="font-size: medium;"><b>Languages:</b></h4>
+                                    <ul style="font-size: medium;font-weight:100"><li>JavaScript</li>
+                                    </ul>
+                                <h4 style="font-size: medium;"><b>Frameworks:</b></h4>
+                                    <ul style="font-size: medium;font-weight:100"><li>Express.js</li>
+                                    <li>Bootstrap</li>
+                                    </ul>
+                                <h4 style="font-size: medium;"><b>Advisor:</b></h4>
+                                  <ul style="font-size: medium;text-decoration: underline #000 dashed!important;"><li><a class="project-background" id="link3" target="_blank" href="https://wiki.polkadot.network/docs/contributors#bill-laboon"><u>Bill Laboon</u></a></li>
+                                  </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <hr id="break2">
+                          <!--next -->
+                          
+
+                          <div class="row">
+                            <div class="col-4 center">
+                               <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 900;">
                           <a class="project-background" id="link5" target="_blank" href="https://github.com/daseqi/single-cycle-cpu"><u>Single-Cycle CPU</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
-                          <p class="mt-4" style="font-size: medium;font-weight:300">
+      
+                                <div class="popup-gallery2">
+                          <h4><a href="img/main.png" id="link6" style="font-size: medium;" class="project-background" title="Main CPU Circuit"><img src="img/main.png" width="0" height="0"><b><u>Gallery</u> <i class="fa fa-image"></i></b></a></h4>
+                        
+                          <a href="img/control.png" title="Control Sub-Circuit"><img src="img/control.png" width="0" height="0"></a>
+                          <a href="img/alu.png" title="ALU Sub-Circuit"><img src="img/alu.png" width="0" height="0"></a>
+                          <a href="img/program-counter.png" title="Program Counter Sub-Circuit"><img src="img/program-counter.png" width="0" height="0"></a>
+                          <a href="img/register-file.png" title="Register File Sub-Circuit"><img src="img/register-file.png" width="0" height="0"></a>
+                          <a href="img/prime-number-demo.gif" title="Demo (Calculates Prime Numbers In Hex)"><img src="img/prime-number-demo.gif" width="0" height="0"></a>
+                          </div>
+                            </div>
+                            <div class="col-8">
+                              
+
+                              <p class="mt-4" style="font-size: medium;font-weight:300">
                           The goal of this project was to build a 16-bit, Harvard architecture, single-cycle CPU in software (Logisim). The final CPU is capable of running programs (with funtion calls, conditionals, etc), outputting numbers, and printing output to a display. Test programs are loaded into ROM by right clicking ROM and selecting "load image". To actually run the CPU, select the "Simulate" tab and enable the simulation.    
                           </p>
                           <div style="font-size: medium;">
@@ -812,36 +897,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <li>RISC Architecture (MIPS)</li>
                                 </ul>
                           </div>
-                          <div class="popup-gallery2">
-                          <h4><a href="img/main.png" id="link6" style="font-size: medium;" class="project-background" title="Main CPU Circuit"><img src="img/main.png" width="0" height="0"><b><u>Single-Cycle CPU Gallery</u> <i class="fa fa-image"></i></b></a></h4>
-                        
-                          <a href="img/control.png" title="Control Sub-Circuit"><img src="img/control.png" width="0" height="0"></a>
-                          <a href="img/alu.png" title="ALU Sub-Circuit"><img src="img/alu.png" width="0" height="0"></a>
-                          <a href="img/program-counter.png" title="Program Counter Sub-Circuit"><img src="img/program-counter.png" width="0" height="0"></a>
-                          <a href="img/register-file.png" title="Register File Sub-Circuit"><img src="img/register-file.png" width="0" height="0"></a>
-                          <a href="img/prime-number-demo.gif" title="Demo (Calculates Prime Numbers In Hex)"><img src="img/prime-number-demo.gif" width="0" height="0"></a>
-                          </div>
-                      
 
+
+                            </div>
+                          </div>
+
+
+
+
+                          <hr id="break3">
                           <!--next -->
+                          
 
-                          <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 900;">
+                          <div class="row">
+                            <div class="col-4 center">
+                            <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 900;">
                           <a class="project-background" id="link7" target="_blank" href="https://github.com/daseqi/healthy-ride"><u>Healthy Ride PGH</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
-                          <p class="mt-4" style="font-size: medium;font-weight:300">
-                          The goal of this project was to create an end-to-end data science pipeline that analyzed data collected by Healthy Ride PGH -- a public bike sharing system for Pittsburgh, PA. Taking rental data from Healthy Ride PGH, I summarized and graphed the rental data, performed clustering on the data using two clustering algorithms (K-Means and DBSCAN), and compared the results of the two clustering algorithms. 
-                          </p>
-                          <div style="font-size: medium;">
-                            <h4 style="font-size: medium;"><b>Languages:</b></h4>
-                                <ul style="font-size: medium;font-weight:100"><li>Python</li>
-                                </ul>
-                            <h4 style="font-size: medium;"><b>Libraries:</b></h4>
-                              <ul style="font-size: medium;font-weight:100"><li>Pandas</li>
-                              <li>Matplotlib</li>
-                              <li>Scikit-Learn</li>
-                              </ul>
-                          </div>
                           <div class="popup-gallery3">
-                          <h4><a href="img/dataframe.png" id="link8" style="font-size: medium;" class="project-background" title="Dataframe Head"><img src="img/dataframe.png" width="0" height="0"><b><u>Healthy Ride PGH Gallery</u> <i class="fa fa-image"></i></b></a></h4>
+                          <h4><a href="img/dataframe.png" id="link14" style="font-size: medium;" class="project-background" title="Dataframe Head"><img src="img/dataframe.png" width="0" height="0"><b><u>Gallery</u> <i class="fa fa-image"></i></b></a></h4>
                         
                           <a href="img/daily-fromCNT.png" title="Daily fromCNT of Given Month"><img src="img/daily-fromCNT.png" width="0" height="0"></a>
                           <a href="img/daily-rebalCNT.png" title="Daily rebalCNT of Given Month"><img src="img/daily-rebalCNT.png" width="0" height="0"></a>
@@ -856,13 +929,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                           <a href="img/knee.png" title="DBSCAN Knee Method"><img src="img/knee.png" width="0" height="0"></a>
                           <a href="img/elbow.png" title="K-Means Elbow Method"><img src="img/elbow.png" width="0" height="0"></a>
                           </div>
+                              
+
+                            </div>
+                            <div class="col-8">
+                              
+
+                              <p class="mt-4" style="font-size: medium;font-weight:300">
+                          The goal of this project was to create an end-to-end data science pipeline that analyzed data collected by Healthy Ride PGH -- a public bike sharing system for Pittsburgh, PA. Taking rental data from Healthy Ride PGH, I summarized and graphed the rental data, performed clustering on the data using two clustering algorithms (K-Means and DBSCAN), and compared the results of the two clustering algorithms. 
+                          </p>
+                          <div style="font-size: medium;">
+                            <h4 style="font-size: medium;"><b>Languages:</b></h4>
+                                <ul style="font-size: medium;font-weight:100"><li>Python</li>
+                                </ul>
+                            <h4 style="font-size: medium;"><b>Libraries:</b></h4>
+                              <ul style="font-size: medium;font-weight:100"><li>Pandas</li>
+                              <li>Matplotlib</li>
+                              <li>Scikit-Learn</li>
+                              </ul>
+                          </div>
 
 
-                           <!--next -->
+                            </div>
+                          </div>
 
-                          <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 900;">
+
+
+
+
+
+
+
+                           <hr id="break4">
+                          <!--next -->
+                          
+
+                          <div class="row">
+                            <div class="col-4 center">
+                            <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 900;">
                           <a class="project-background" id="link9" target="_blank" href="https://github.com/daseqi/apartment-lookup"><u>Apartment Lookup</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
-                          <p class="mt-4" style="font-size: medium;font-weight:300">
+                           <div class="popup-gallery4">
+                          <h4><a href="img/main-program.png" id="link10" style="font-size: medium;" class="project-background" title="Command Line Interface"><img src="img/main-program.png" width="0" height="0"><b><u>Gallery</u> <i class="fa fa-image"></i></b></a></h4>
+                        
+                          <a href="img/add-apartment.png" title="Add Apartment"><img src="img/add-apartment.png" width="0" height="0"></a>
+                          <a href="img/lowest-price.png" title="Lowest Priced Apartment"><img src="img/lowest-price.png" width="0" height="0"></a>
+                          <a href="img/lowest-price-by-city.png" title="Lowest Priced Apartment By City"><img src="img/lowest-price-by-city.png" width="0" height="0"></a>
+                          </div>
+                              
+
+                            </div>
+                            <div class="col-8">
+                              
+                               <p class="mt-4" style="font-size: medium;font-weight:300">
                           The goal of this project was to implement heap and trie data structures that could quickly and efficiently search for apartments with certain characteristics, such as lowest price or highest square footage. The algorithm performs apartment searches in O(1) time complexity, while minimizing space complexity wherever possible. The program's interface is through the command line. For more information about the time and space complexity, please refer to the GitHub documentation.
                           </p>
                           <div style="font-size: medium;">
@@ -870,21 +988,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                 <ul style="font-size: medium;font-weight:100"><li>Java</li>
                                 </ul>
                           </div>
-                          <div class="popup-gallery4">
-                          <h4><a href="img/main-program.png" id="link10" style="font-size: medium;" class="project-background" title="Command Line Interface"><img src="img/main-program.png" width="0" height="0"><b><u>Apartment Lookup Gallery</u> <i class="fa fa-image"></i></b></a></h4>
-                        
-                          <a href="img/add-apartment.png" title="Add Apartment"><img src="img/add-apartment.png" width="0" height="0"></a>
-                          <a href="img/lowest-price.png" title="Lowest Priced Apartment"><img src="img/lowest-price.png" width="0" height="0"></a>
-                          <a href="img/lowest-price-by-city.png" title="Lowest Priced Apartment By City"><img src="img/lowest-price-by-city.png" width="0" height="0"></a>
+
+
+
+                            </div>
                           </div>
 
 
 
-                          <!--next -->
 
-                          <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 900;">
-                          <a class="project-background" id="link11" target="_blank" href="https://github.com/daseqi/misc"><u>Miscellaneous</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3> 
-                          <p class="mt-4" style="font-size: medium;font-weight:300">
+
+
+
+
+                           <hr id="break5">
+                          <!--next -->
+                          
+
+                          <div class="row">
+                            <div class="col-4 center">
+                             <h3 class="section-header mt-4" style="font-size: 120%;font-weight: 900;">
+                          <a class="project-background" id="link11" target="_blank" href="https://github.com/daseqi/misc"><u>Misc</u> <i class="fa fa-github" aria-hidden="true"></i></a></h3>                              
+
+                            </div>
+                            <div class="col-8">
+                              <p class="mt-4" style="font-size: medium;font-weight:300">
                           Other (smaller or incomplete) projects include...
                           </p>
                           <div style="font-size: medium;">
@@ -897,7 +1025,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <h4 style="font-size: medium;"><b>Options Pricing:</b></h4>
                               <ul style="font-size: medium;font-weight:100"><li>This is a simple application that, when given a stock’s ticker symbol and strike price, will scrape Yahoo options data on the stock and convert the data to graphically show the price of the contract -- at the given strike price -- over time (over the expiration dates). </li>
                               </ul>
-                          </div>                          
+                          </div>     
+
+
+
+                            </div>
+                          </div>
+
+
+
+
+                          
+                                                   
 
                         </div>
                      </div>
@@ -1010,6 +1149,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
       });
 
+       $(document).ready(function() {
+        $('.popup-gallery5').magnificPopup({
+          delegate: 'a',
+          type: 'image', 
+          fixedContentPos: true,
+          tLoading: 'Loading image #%curr%...',
+          mainClass: 'mfp-img-mobile',
+          
+          gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+          },
+          image: {
+            tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+            titleSrc: function(item) {
+              return item.el.attr('title') + '<small>by Devin Haughey</small>';
+            }
+          }
+        });
+      });
 
 
 
@@ -1020,6 +1180,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var ele = document.getElementById("link1")
   var elem = document.getElementById("link2")
   var hr = document.getElementById("break")
+
+var hr1 = document.getElementById("break1")
+var hr2 = document.getElementById("break2")
+var hr3 = document.getElementById("break3")
+var hr4 = document.getElementById("break4")
+var hr5 = document.getElementById("break5")
+
   var e = document.getElementById("link3")
   var pol = document.getElementById("polka")
 
@@ -1033,6 +1200,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   var ten =document.getElementById("link10")
   var eleven=document.getElementById("link11")
   var twelve = document.getElementById("link12")
+  var thirteen = document.getElementById("link13")
+  var fourteen = document.getElementById("link14")
 var nav = document.getElementById("navigation")
 var navlink = document.getElementById("nav-link1")
 var navlink2 = document.getElementById("nav-link2")
@@ -1044,7 +1213,14 @@ var towhite = document.getElementById("towhite")
   ele.classList.toggle("links1");
   elem.classList.toggle("links");
   e.classList.toggle("links");
-  hr.classList.toggle("hr")
+  hr.classList.toggle("hr");
+   
+    hr1.classList.toggle("hr");
+     hr2.classList.toggle("hr");
+      hr3.classList.toggle("hr");
+       hr4.classList.toggle("hr");
+        hr5.classList.toggle("hr");
+
   four.classList.toggle("links");
   five.classList.toggle("links");
   six.classList.toggle("links");
@@ -1054,6 +1230,8 @@ var towhite = document.getElementById("towhite")
   ten.classList.toggle("links");
   eleven.classList.toggle("links");
   twelve.classList.toggle("links");
+  thirteen.classList.toggle("links");
+  fourteen.classList.toggle("links");
   nav.classList.toggle("navie");
   navlink.classList.toggle("nav-link-me");
   navlink2.classList.toggle("nav-link-me");
